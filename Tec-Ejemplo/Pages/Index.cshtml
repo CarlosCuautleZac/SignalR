@@ -1,0 +1,33 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    .glass{
+        position:absolute;
+        bottom:0;
+        width:200px;
+        background:#2E1;
+    }
+
+    .glass-container{
+        height:200px;
+        width:200px;
+        position:relative
+    }
+
+    .glass-container img{
+        z-index:1000;
+        position:absolute;
+    }
+</style>
+
+
+<div id="gameContainer">
+   
+</div>
+
+<script src="~/lib//microsoft//signalr/dist/browser/signalr.js"></script>
+<script src="~/js/game.js"></script>
